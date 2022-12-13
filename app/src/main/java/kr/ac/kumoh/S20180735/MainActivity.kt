@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onClick(v: View?) {
-                Toast.makeText(application,"눌렀습니다",Toast.LENGTH_LONG).show()
                 val intent = Intent(application, GameActivity::class.java)
                 intent.putExtra(GameActivity.KEY_GAME,
                     model.list.value?.get(adapterPosition)?.name)
