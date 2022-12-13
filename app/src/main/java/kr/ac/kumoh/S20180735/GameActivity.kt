@@ -37,7 +37,7 @@ class GameActivity : AppCompatActivity() {
 
         // 클릭시 나오는 창의 정보
         binding.imageGame.setImageUrl(intent.getStringExtra(KEY_IMAGE), imageLoader)
-        binding.textTitle.text = intent.getStringExtra(KEY_GAME)
-        binding.textGenre.text = intent.getStringExtra(KEY_INFO)
+        binding.textName.text = intent.getStringExtra(KEY_GAME)
+        binding.textInfo.text = intent.getStringExtra(KEY_INFO)
     }
 }
